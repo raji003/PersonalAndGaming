@@ -1,0 +1,11 @@
+body{
+    font-family: 'Georgia', serif;
+    color: #e0e0e0; /* hovedtekst */
+    background-color: #0a0f2a;
+    margin: 0%;
+    padding: 25px;
+}
+
+p, span, li{
+    color: #a0b8d9;
+}

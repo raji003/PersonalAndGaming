@@ -3,7 +3,7 @@
 
 ### 🎨 Design & Layout
 
-* [ ] Lag grunnleggende HTML-struktur med `header`, `main` og `section`
+* [ ] Lag grunnleggende HTML-struktur med `tab`, `header`, `main` og `section`
 * [ ] Sett opp responsivt **grid-layout** for kortene
 * [ ] Design hover-animasjon med **skyggelag** og skalering
 * [ ] Lag en **mobilvennlig** versjon (responsiv design med media queries)
