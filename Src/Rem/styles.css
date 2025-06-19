@@ -9,3 +9,9 @@ body{
 p, span, li{
     color: #a0b8d9;
 }
+.tabcontent{
+    color: null;
+}
+.tablinks{
+    color: null;
+}
