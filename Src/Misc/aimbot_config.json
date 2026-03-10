@@ -1,0 +1,11 @@
+{
+    "aim_toggle_key": "f",
+    "auto_aim": true,
+    "crosshair_color": [0, 255, 0],
+    "crosshair_size": 20,
+    "alert_sound": true,
+    "team_detection": true,
+    "show_fps_overlay": true,
+    "multi_monitor_support": true,
+    "resolution_auto_detect": true
+}
