@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg: #080a0f;
+    --neon-cyan: #00f0ff;
+    --neon-pink: #ff3c6e;
+    --text: #e8eaf2;
+    --muted: #4a5068;
+}
+
+
+body{
+    background-color:  var(--bg);
+    color: var(--text);
+    font-family: 'Orbitron', sans-serif;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    padding: 1.5rem 3rem;
+    background-color: rgba(8, 10, 15, 0.85);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+
+nav a{
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.75rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    transition: color 0.2s ease;
+}
+
+nav a:hover{
+    color: var(--neon-cyan);
+}
+
+#hero{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+#hero h1{
+    font-size: clamp(3rem, 10vh, 8rem);
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 0.05rem;
+}
+
+
+#hero .tagline{
+    font-size: 0.9rem;
+    color: var(--muted);
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+
+.glitch{
+    position: relative;
+}
+.glitch::before,
+.glitch::after{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.glitch::before{
+    color: var(--neon-pink);
+    animation: glitch-top 4s infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+}
+
+.glitch::after{
+    color: var(--neon-cyan);
+    animation: glitch-bot 4s infinite 0.3s;
+    clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+
+}
+
+@keyframes glitch-top{
+    0%, 90%, 100% {transform: translate(0); opacity: 0;}
+    92% {transform: translate(-4px, -2px); opacity: 1;}
+    94% {transform: translate(4px, 0px); opacity: 1;}
+    96% {transform: translate(0); opacity: 0;}
+}
+
+@keyframes glitch-bot{
+    0%, 98%, 100% {transform: translate(0); opacity: 0;}
+    90% {transform: translate(4px, 2px); opacity: 1;}
+    93% {transform: translate(-3px, 0px); opacity: 1;}
+    95% {transform: translate(0px, 0px); opacity: 0;}
+}

@@ -64,3 +64,33 @@
 * [ ] Gjør hele prosjektet til en Electron-app eller pakk det som `.exe`
 
 ---
+
+
+
+----
+
+
+Introvert og shy i hverdagen, men confident og flashy når du gamer
+Det skal gjenspeiles i siden — rolig og minimalistisk på overflaten, men med punch når det trengs
+
+Vibes / estetikk
+
+Mørk bakgrunn, cyberpunk-inspirert
+Neon-aksenter (cyan, magenta)
+Glitch-effekt på navnet i hero
+Neon glow / pulse på elementer
+Ikke overlesstet — det som er der skal slå
+
+Layout
+
+Fullscreen sections (100vh), scroll-basert
+Navbar øverst med: Home, Peripherals, Games, Cars, Socials
+
+Innhold per seksjon
+
+Hero — navn stort, glitch-animasjon, minimalistisk
+Peripherals — utstyr (mus, tastatur, headset, skjerm, musematte)
+Games — spill du spiller (Valorant, Rocket League, Fortnite osv.)
+Cars — bilene dine (Mercedes-AMG)
+Socials — Discord, TikTok, Twitch
+----
